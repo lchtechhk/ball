@@ -33,7 +33,7 @@ export class FolderPage implements OnInit {
     this.uiProvider.presentLoadingDefault();
     let login_profile = {username:"internalstaff", email:"internalstaff@gmail.com", password:"123123"};
 
-    this.config.post(this.config.url + 'post_test',login_profile,(res: any) => {
+    this.config.post(this.config.url + 'post_test','',(res: any) => {
       alert(JSON.stringify(res))
       console.log("res : " + JSON.stringify(res));
     }, (error: any) => {

@@ -13,8 +13,12 @@ export class ConfigProvider {
       private ui : UIProvider,
       private ObjectUtils : ObjectUtils) { };
 
-    public url : string = "http://127.0.0.1/app/api/";
-    public pdf_url : string = "http://127.0.0.1/app/api/";
+    // public url : string = "http://127.0.0.1/app/api/";
+    // public pdf_url : string = "http://127.0.0.1/app/api/";
+
+    public url : string = "http://192.168.1.116/app/api/";
+    public pdf_url : string = "http://192.168.1.116/app/api/";
+
     // public url : string = "http://13.229.0.90/app/api/";
     // public pdf_url : string = "http://13.229.0.90/app/";
     public img_url : string = "https://13.251.6.226/rainbow_icon/";

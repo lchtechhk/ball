@@ -14,8 +14,12 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
+  <!-- <div id="container">
     <strong class="capitalize">{{ folder }}</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  </div> -->
+  <div id="container">
+    <ion-button color="primary" (click)="get();">Primary</ion-button>
+    <ion-button color="secondary" (click)="post();">Secondary</ion-button>
   </div>
 </ion-content>

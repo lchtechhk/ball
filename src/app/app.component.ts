@@ -44,12 +44,12 @@ export class AppComponent implements OnInit {
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  private wide: boolean = false;
+
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private menuCtrl:MenuController,
+    private menuController:MenuController,
   ) {
     this.initializeApp();
   }
@@ -58,22 +58,8 @@ export class AppComponent implements OnInit {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
-      this.menuCtrl.close();
-      // this.menuCtrl.enable(false);
-     
-
     });
   }
-
-  // setWidth() {
-  //   if (this.platform.width() > 767) {
-  //       this.wide = true;
-  //       this.menuCtrl.close();
-  //   } else {
-  //       this.wide = false;
-  //       this.menuCtrl.close();
-  //   }
-  // };
 
   ngOnInit() {
     const path = window.location.pathname.split('folder/')[1];
